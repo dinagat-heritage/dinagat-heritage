@@ -1,16 +1,18 @@
-## Hi there 👋
+# Dinagat Heritage
 
-<!--
-**dinagat-heritage/dinagat-heritage** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A living archive of family history, culture, and untold stories from the Dinagat Islands,
+Philippines — with a connected paternal thread from Tagbilaran, Bohol.
 
-Here are some ideas to get you started:
+## Structure
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- `/` — homepage
+- `/roots/` — family genealogy and records
+- `/island/` — Dinagat Islands history and culture
+- `/guides/` — practical research guides for the Caraga region
+- `llms.txt` — structured content map for AI systems (GEO)
+- `robots.txt` — crawler permissions
+
+## Hosting
+
+Static site, deployed via GitHub Pages. Point `dinagatheritage.com` at this repo once
+registered.

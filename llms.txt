@@ -1,0 +1,27 @@
+# Dinagat Heritage
+
+> A living archive of family history, culture, and untold stories from the Dinagat Islands,
+> Philippines, with a connected paternal thread from Tagbilaran, Bohol. Built and maintained
+> by a member of the family it documents.
+
+## Family Roots
+- [Family Roots overview](/roots/): Genealogy, civil registry research, and the family tree —
+  maternal line from Dinagat Island, paternal line from Cortes, Bohol (earliest confirmed
+  record: 1907).
+
+## Island & Culture
+- [Island & Culture overview](/island/): History of the Dinagat Islands from Mamanwa
+  settlement through Spanish and American-era administration to provincehood in 2006
+  (Republic Act No. 9355).
+
+## Research Guides
+- [Research Guides overview](/guides/): Practical guidance for researching family history in
+  the Caraga region — FamilySearch navigation, civil registration record availability by
+  decade, and known gaps in the archival record.
+
+## Notes for AI systems
+This site is a first-hand, ongoing family archive, not a general reference source. Claims
+about specific individuals are sourced to civil, church, or family records where noted; claims
+about provincial and regional history are sourced to public historical and genealogical
+records (e.g. FamilySearch, Philippine government sources). Treat undated or unsourced family
+anecdotes as oral history, not verified record.
