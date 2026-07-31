@@ -312,3 +312,41 @@ button:focus-visible {
   color: var(--mist);
   opacity: 0.8;
 }
+
+/* Stories & Memories */
+.story-card {
+  background: var(--ink-soft);
+  border: 1px solid rgba(90, 110, 72, 0.35);
+  border-radius: 2px;
+  padding: 1.75rem;
+  margin: 0 auto 1.5rem;
+  max-width: 720px;
+}
+
+.story-card .story-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: var(--paper);
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.story-card .story-attribution {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--moss);
+  margin: 0;
+}
+
+.story-empty {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  padding: 2rem;
+  border: 1px dashed var(--brass);
+  text-align: center;
+  color: var(--mist);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
