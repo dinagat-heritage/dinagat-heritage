@@ -350,3 +350,38 @@ button:focus-visible {
   font-family: var(--font-mono);
   font-size: 0.85rem;
 }
+
+/* Photo story entries */
+.photo-story {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  background: var(--ink-soft);
+  border: 1px solid rgba(90, 110, 72, 0.35);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.photo-story img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-story .photo-story-body {
+  padding: 1.5rem 1.75rem;
+}
+
+.photo-story .photo-story-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--paper);
+  margin: 0 0 0.5rem;
+}
+
+.photo-story .photo-story-meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--moss);
+  margin: 0;
+}
