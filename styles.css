@@ -385,3 +385,46 @@ button:focus-visible {
   color: var(--moss);
   margin: 0;
 }
+
+/* Wordmark with crest icon */
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.wordmark img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
+/* Hero with crest */
+.hero-with-crest {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap-reverse;
+}
+
+.hero-with-crest .hero-text {
+  flex: 1 1 420px;
+}
+
+.hero-with-crest .hero-crest {
+  flex: 0 1 260px;
+  max-width: 260px;
+}
+
+.hero-with-crest .hero-crest img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 780px) {
+  .hero-with-crest .hero-crest {
+    max-width: 160px;
+    margin: 0 auto;
+  }
+}
