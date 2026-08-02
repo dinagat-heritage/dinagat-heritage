@@ -428,3 +428,56 @@ button:focus-visible {
     margin: 0 auto;
   }
 }
+
+/* Historical photo gallery */
+.gallery-intro {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+}
+
+.gallery {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .gallery { grid-template-columns: 1fr; }
+}
+
+.gallery figure {
+  margin: 0;
+  background: var(--ink-soft);
+  border: 1px solid rgba(176, 130, 69, 0.3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery figcaption {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.gallery figcaption .cap-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--paper);
+  margin: 0 0 0.4rem;
+  line-height: 1.4;
+}
+
+.gallery figcaption .cap-note {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--mist);
+  margin: 0;
+}
