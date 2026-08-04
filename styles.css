@@ -565,7 +565,8 @@ button:focus-visible {
   overflow: hidden;
 }
 
-.illustrated-story svg {
+.illustrated-story svg,
+.illustrated-story img {
   width: 100%;
   height: auto;
   display: block;
