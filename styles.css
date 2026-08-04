@@ -481,3 +481,76 @@ button:focus-visible {
   color: var(--mist);
   margin: 0;
 }
+
+/* Place facts card */
+.place-facts-card {
+  background: var(--ink-soft);
+  border: 1px solid rgba(90, 110, 72, 0.4);
+  border-left: 3px solid var(--moss);
+  padding: 1.5rem 1.75rem;
+  margin: 0 auto 2rem;
+  max-width: 720px;
+}
+
+.place-facts-card .place-facts-title {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brass-bright);
+  margin: 0 0 1rem;
+}
+
+.place-facts-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.place-facts-card li {
+  font-size: 0.92rem;
+  color: var(--paper);
+  line-height: 1.5;
+}
+
+.place-facts-card li strong {
+  color: var(--brass-bright);
+  font-weight: 500;
+}
+
+/* Factoid callout box */
+.place-facts-box {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  background: var(--ink-soft);
+  border-left: 3px solid var(--coral);
+  border-radius: 2px;
+  padding: 1.75rem;
+}
+
+.place-facts-box .place-facts-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin: 0 0 0.75rem;
+}
+
+.place-facts-box ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.place-facts-box li {
+  color: var(--mist);
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.55;
+}
+
+.place-facts-box li strong {
+  color: var(--paper);
+}
