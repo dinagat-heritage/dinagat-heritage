@@ -554,3 +554,39 @@ button:focus-visible {
 .place-facts-box li strong {
   color: var(--paper);
 }
+
+/* Illustrated story (no photo exists — atmospheric illustration instead) */
+.illustrated-story {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  background: var(--ink-soft);
+  border: 1px solid rgba(90, 110, 72, 0.35);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.illustrated-story svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.illustrated-story .story-text {
+  padding: 1.75rem;
+}
+
+.illustrated-story .story-text p {
+  font-style: italic;
+  color: var(--paper);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.illustrated-story .story-attribution {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--moss);
+  font-style: normal;
+  margin-top: 1.25rem;
+}
