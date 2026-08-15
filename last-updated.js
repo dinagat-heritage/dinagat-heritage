@@ -30,9 +30,10 @@
     text = text.replace(/\s*\([^)]*\)/g, "");
     // drop a leading git-style imperative verb
     text = text.replace(/^(Add|Adds|Added|Update|Updates|Updated|Create|Creates|Created|Insert|Inserts|Expand|Expands|Rebuild|Rebuilds|Convert|Converts)\s+/i, "");
-    // tidy any double spaces left behind
+    // tidy any double spaces left behind, and any trailing punctuation
     text = text.replace(/\s{2,}/g, " ").trim();
-    return text;
+    text = text.replace(/[.,;:]+$/, "");
+    return text + " added to the family tree";
   }
 
   function reveal(text) {
