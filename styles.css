@@ -632,3 +632,27 @@ button:focus-visible {
     opacity: 1;
   }
 }
+
+/* Read next prompts */
+.read-next {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  padding: 1rem 1.5rem;
+  border-left: 2px solid var(--brass);
+  background: var(--ink-soft);
+}
+
+.read-next .read-next-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--brass-bright);
+  margin: 0 0 0.35rem;
+}
+
+.read-next a {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+}
