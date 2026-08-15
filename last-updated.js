@@ -15,7 +15,8 @@
     "size fix", "legibility", "privacy:", "workflow", "deploy after",
     "stuck", "cancelled", "re-run", "merge github actions",
     "scaffold", "initial commit", "readme", "reduce personal surname",
-    "cnam", "dns",
+    "cnam", "dns", "last-updated", "last updated", "filter", "technical",
+    "commit history", "site plumbing", "engagement feature",
   ];
 
   function isTechnical(message) {
