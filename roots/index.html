@@ -30,11 +30,12 @@
     <a href="/#island">Island &amp; Culture</a>
     <a href="/#guides">Research Guides</a>
     <a href="/contribute/">Contribute</a>
+      <button class="surprise-btn" onclick="dinagatSurpriseMe()">🎲 Surprise Me</button>
   </nav>
 </header>
 
 <main>
-  <section class="hero">
+  <section class="hero" id="dionisia">
     <p class="hero-eyebrow">Family Roots · Paternal Line</p>
     <h1 class="hero-title">Dionisia Millanar<br>Cortes, Bohol (1907–1955)</h1>
     <p class="hero-lede">
@@ -42,6 +43,8 @@
       currently runs out.
     </p>
   </section>
+
+  <p class="last-updated">Last updated: August 2026 — added the Surprise Me feature and sitemap</p>
 
   <article class="record-card">
     <p class="record-name">Dionisia Millanar</p>
@@ -102,7 +105,7 @@
       somewhere, it would be one of the most valuable things this archive could hold.
     </p>
 
-    <h2>The family tree, so far</h2>
+    <h2 id="family-tree">The family tree, so far</h2>
     <p>
       Two branches, built from records and from what relatives remember. The paternal side now
       traces back two generations further than we first thought — through Donato Millanar and
@@ -439,7 +442,7 @@
       </figcaption>
     </figure>
 
-    <h2>Stories &amp; memories</h2>
+    <h2 id="stories">Stories &amp; memories</h2>
     <p>
       Records give you dates and places. They don't give you what a person was actually like —
       that only survives if someone tells it, and someone else writes it down. This is where
@@ -486,7 +489,7 @@
       </div>
     </article>
 
-    <article class="illustrated-story">
+    <article class="illustrated-story" id="kanjinahud">
       <img src="/images/kanjinahud-night.jpg" alt="A grandfather and grandson hiding among the pineapple plants at night on Kanjinahud, the boy signaling quiet">
       <div class="story-text">
         <p>
@@ -554,7 +557,7 @@
       </figcaption>
     </figure>
 
-    <div class="illustrated-story" style="padding: 0;">
+    <div class="illustrated-story" id="mamas-dinagat" style="padding: 0;">
       <img src="/images/warlita-lebanon.jpg" alt="Warlita Aghbarian at home in Lebanon, surrounded by flowers">
       <div class="story-text" style="padding: 1.75rem;">
         <p class="photo-story-title" style="font-style:normal; margin-bottom:0.25rem;">Mama's Dinagat</p>
@@ -609,13 +612,19 @@
       More keep coming — check back often, or be the next one to <a href="/contribute/">share one</a>.
     </div>
 
+    <p style="text-align:center; font-family:var(--font-mono); font-size:0.85rem;">
+      Did one of these stories bring back a memory of your own? Say so on
+      <a href="https://www.facebook.com/profile.php?id=61592793986914" target="_blank" rel="noopener">the Facebook page</a> —
+      a comment there does more for this archive than any like ever could.
+    </p>
+
     <p>
       Have something to add — a memory, an old photo, a name that finally makes sense of a
       gap in the tree? <a href="/contribute/">Contribute it here</a>, or find us on
       <a href="https://www.facebook.com/profile.php?id=61592793986914" target="_blank" rel="noopener">Facebook</a> if that's easier.
     </p>
 
-    <h2>Before Isidaria — A First Marriage</h2>
+    <h2 id="jazon-branch">Before Isidaria — A First Marriage</h2>
     <p>
       Justo Piodo Jason had a first wife before Isidaria — her name isn't known yet, but the
       three children from that marriage carried forward under a slightly different spelling:
@@ -800,7 +809,7 @@
     </svg>
     </div>
 
-    <h2>A Reputation, Earned on the Drill Field</h2>
+    <h2 id="rotd-story">A Reputation, Earned on the Drill Field</h2>
     <div class="gallery-intro">
       <p>
         Panfilo wasn't just an association officer later in life — in his university days at
@@ -819,7 +828,7 @@
       </p>
     </div>
 
-    <h2>The Dinagat Association, Manila</h2>
+    <h2 id="dinagat-association">The Dinagat Association, Manila</h2>
     <div class="gallery-intro">
       <p>
         Long before there was a website, there was a banner: <em>"Dinagat Association Manila —
@@ -1007,7 +1016,7 @@
       in full further up this page, on the paternal side of the tree.
     </p>
 
-    <h2>Zacarias Millanar's Line</h2>
+    <h2 id="zacarias-line">Zacarias Millanar's Line</h2>
     <p>
       Zacarias was the eldest of Emilio and Pascuala's eight children. He married Leonora
       Santos, and they had four children — Emil, Zarah, Eric, and Edwin — whose own families
@@ -1099,7 +1108,7 @@
       kind of gap this archive is built to close.
     </p>
 
-    <h2>Fe Penaflor's Line</h2>
+    <h2 id="penaflor-line">Fe Penaflor's Line</h2>
     <p>
       Fe was another of Emilio and Pascuala's eight children, married to Inocencio Penaflor.
       Four generations now trace down from her — the fullest single line documented on this
@@ -1148,7 +1157,7 @@
     </svg>
     </div>
 
-    <h2>The Ligason Line</h2>
+    <h2 id="ligason-line">The Ligason Line</h2>
     <p>
       Emilio Millanar's first marriage produced three more children — Porferia, Marcilina, and
       Jose — a full branch of the family in its own right, running parallel to Froilan's. Porferia
@@ -1229,5 +1238,6 @@
 <footer class="site-footer">
   <p>Dinagat Heritage — an ongoing archive, not a finished one.</p>
 </footer>
+<script src="/random.js"></script>
 </body>
 </html>
