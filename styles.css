@@ -656,3 +656,86 @@ button:focus-visible {
   font-style: italic;
   font-size: 1.05rem;
 }
+
+/* Recent additions strip (homepage) */
+.recent-additions {
+  max-width: 1040px;
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.recent-additions .ra-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--brass-bright);
+  margin: 0 0 1.25rem;
+}
+
+.ra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 780px) {
+  .ra-grid { grid-template-columns: 1fr; }
+}
+
+.ra-card {
+  display: block;
+  background: var(--ink-soft);
+  border: 1px solid rgba(176, 130, 69, 0.3);
+  border-radius: 2px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.6s ease, border-color 0.2s ease;
+}
+
+.ra-card.is-loaded { opacity: 1; }
+.ra-card:hover { border-color: var(--brass); text-decoration: none; }
+
+.ra-card .ra-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  background: var(--ink);
+}
+
+.ra-card .ra-icon-wrap {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+}
+
+.ra-card .ra-icon-wrap svg {
+  width: 48px;
+  height: 48px;
+}
+
+.ra-card .ra-body {
+  padding: 1rem 1.1rem;
+}
+
+.ra-card .ra-title {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  color: var(--paper);
+  margin: 0 0 0.3rem;
+  line-height: 1.4;
+}
+
+.ra-card .ra-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--moss);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ra-card { transition: none; opacity: 1; }
+}
