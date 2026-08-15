@@ -24,6 +24,17 @@
     return TECHNICAL_MARKERS.some((marker) => lower.includes(marker));
   }
 
+  function humanize(message) {
+    let text = message;
+    // drop parenthetical asides — "(Moises's wife)" etc.
+    text = text.replace(/\s*\([^)]*\)/g, "");
+    // drop a leading git-style imperative verb
+    text = text.replace(/^(Add|Adds|Added|Update|Updates|Updated|Create|Creates|Created|Insert|Inserts|Expand|Expands|Rebuild|Rebuilds|Convert|Converts)\s+/i, "");
+    // tidy any double spaces left behind
+    text = text.replace(/\s{2,}/g, " ").trim();
+    return text;
+  }
+
   function reveal(text) {
     el.textContent = text;
     requestAnimationFrame(() => {
@@ -46,7 +57,7 @@
         month: "long",
         day: "numeric",
       });
-      reveal("Last updated: " + dateStr + " — " + rawMessage);
+      reveal("Last updated: " + dateStr + " — " + humanize(rawMessage));
     })
     .catch(() => {
       reveal("This archive is updated regularly.");
