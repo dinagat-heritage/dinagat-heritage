@@ -618,4 +618,17 @@ button:focus-visible {
   text-align: center;
   margin: -1rem auto 2rem;
   max-width: 720px;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.last-updated.is-loaded {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .last-updated {
+    transition: none;
+    opacity: 1;
+  }
 }
